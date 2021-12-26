@@ -1,15 +1,8 @@
 import './App.css';
 import  React, { useState, useEffect } from 'react';
 import {Button, FormControl, InputLabel,Input,Slider} from '@mui/material';
-// import Box from '@mui/material/Box';
-// import AdapterDateFns from '@mui/lab/AdapterDateFns';
-// import LocalizationProvider from '@mui/lab/LocalizationProvider';
-// import DesktopDatePicker from '@mui/lab/DatePicker';
-// import Todolist from './Todolist';
-// import { doc, getDoc,  } from 'firebase/firestore/lite';
 import Todo from './Todo';
 import db from './firebase';
-import firebase from 'firebase';
 
 
 function App() {
@@ -89,20 +82,3 @@ function App() {
 
 export default App;
 
-
-
-// <LocalizationProvider dateAdapter={AdapterDateFns}>
-//         <DesktopDatePicker
-//           label="Custom input"
-//           value={value}
-//           onChange={(newValue) => {
-//             setValue(newValue);
-//           }}
-//           renderInput={({ inputRef, inputProps, InputProps }) => (
-//             <Box sx={{ display: 'flex', alignItems: 'center' }}>
-//               <input ref={inputRef} {...inputProps} /> 
-//               {InputProps?.endAdornment}
-//             </Box>
-//           )}
-//         />
-//       </LocalizationProvider>
