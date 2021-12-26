@@ -12,7 +12,7 @@ function Todo(props) {
             <ListItem > 
             <ListItemText primary={props.todo.todo} secondary={`Deadline⏰: ${deadline}days`}></ListItemText>
             </ListItem>
-            <Button onClick={()=>props.deleteTodo(props.todo)} >✅Done</Button>
+            <Button onClick={()=>props.deleteTodo(props.todo.todo)} >✅Done</Button>
         </List>
         </>
     )
@@ -22,7 +22,7 @@ function Todo(props) {
             <ListItem > 
             <ListItemText primary={props.todo.todo} secondary={`Past deadline`} style={{'color':'red'}}></ListItemText>
             </ListItem>
-            <Button onClick={()=>props.deleteTodo(props.todo)} >✅Done</Button>
+            <Button onClick={()=>props.deleteTodo(props.todo.todo)} >✅Done</Button>
         </List>
         </>
     )
